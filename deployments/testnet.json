@@ -1,0 +1,51 @@
+{
+  "network": "bscTestnet",
+  "deployer": "0x115435e14798a90dbd8849483CCE10d3DB502c23",
+  "timestamp": "2025-12-28T00:22:38.335Z",
+  "contracts": {
+    "priceOracle": "0xb27B9dF2A8E88847ED9eaF2937dA55f17C34f34E",
+    "dexRouter": "0x13D24e89468B9aF9e1eeCff3D224be940Cd67aF3",
+    "feeCollector": "0xdCDe4AdC522c8eae8992693544F3336B9C96BB6b",
+    "rebalanceValidator": "0x75Fa95d6851dA49c3AA7E896B0Ad2bbeFd151eeA",
+    "emergencyModule": "0xB4d662074b99172e1D7ad13247940150213448Be",
+    "fundFactory": "0x4B56686Ef0C430d934C6D45bA955b1bBC81609DC"
+  },
+  "supportedAssets": {
+    "BUSD": "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7",
+    "WBNB": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+    "CAKE": "0xFa60D973F7642B748046464e165A65B7323b0DEE"
+  },
+  "funds": [
+    {
+      "name": "TradCem Balanced Fund",
+      "symbol": "TCBF",
+      "address": "0x9a490F2CCFad1C06A88fA36F44196A9A0b588Bb8",
+      "createdAt": "2025-12-28T00:22:38.335Z",
+      "config": {
+        "name": "TradCem Balanced Fund",
+        "symbol": "TCBF",
+        "manager": "0x115435e14798a90dbd8849483CCE10d3DB502c23",
+        "allowedAssets": [
+          "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7",
+          "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+          "0xFa60D973F7642B748046464e165A65B7323b0DEE"
+        ],
+        "targetWeights": [
+          5000,
+          3000,
+          2000
+        ],
+        "priceOracle": "0xb27B9dF2A8E88847ED9eaF2937dA55f17C34f34E",
+        "dexRouter": "0x13D24e89468B9aF9e1eeCff3D224be940Cd67aF3",
+        "feeCollector": "0xdCDe4AdC522c8eae8992693544F3336B9C96BB6b",
+        "rebalanceValidator": "0x75Fa95d6851dA49c3AA7E896B0Ad2bbeFd151eeA",
+        "emergencyModule": "0xB4d662074b99172e1D7ad13247940150213448Be",
+        "managementFee": 200,
+        "performanceFee": 2000,
+        "rebalanceInterval": 604800,
+        "weightTolerance": 500,
+        "salt": "0xcd2c743beabe0ef2d3498161610d0a10e6e4b0d280d9c153328a85b6c465d195"
+      }
+    }
+  ]
+}

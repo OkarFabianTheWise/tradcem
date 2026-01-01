@@ -1,0 +1,37 @@
+{
+  "name": "tradcem",
+  "version": "1.0.0",
+  "description": "TradCem On-Chain Fund System - EVM Implementation",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test:coverage": "npx hardhat coverage",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --network bscTestnet",
+    "create-fund:testnet": "npx hardhat run scripts/create-fund.js --network bscTestnet",
+    "full-deploy:testnet": "npx hardhat run scripts/full-deploy.js --network bscTestnet",
+    "test-fund:testnet": "npx hardhat run scripts/test-fund.js --network bscTestnet",
+    "verify:testnet": "npx hardhat verify --network bscTestnet",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network bscMainnet",
+    "create-fund:mainnet": "npx hardhat run scripts/create-fund.js --network bscMainnet",
+    "verify:mainnet": "npx hardhat verify --network bscMainnet",
+    "lint": "npx solhint 'contracts/**/*.sol'",
+    "lint:fix": "npx solhint 'contracts/**/*.sol' --fix"
+  },
+  "keywords": [
+    "defi",
+    "funds",
+    "bnb-chain",
+    "solidity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@openzeppelin/contracts": "^4.9.0",
+    "dotenv": "^17.2.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.19.0"
+  }
+}

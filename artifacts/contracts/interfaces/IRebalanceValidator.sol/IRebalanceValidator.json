@@ -1,0 +1,101 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IRebalanceValidator",
+  "sourceName": "contracts/interfaces/IRebalanceValidator.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "currentWeights",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "targetWeights",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tolerance",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculateRequiredTrades",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "fromAsset",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "toAsset",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountIn",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minOut",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct TradCemFund.Trade[]",
+          "name": "trades",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "currentWeights",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "targetWeights",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tolerance",
+          "type": "uint256"
+        }
+      ],
+      "name": "validateRebalance",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "needsRebalance",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
